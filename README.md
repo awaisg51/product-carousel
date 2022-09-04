@@ -24,17 +24,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-It is a product carousel that is made by using Bootstrap 4.0 default functionality. All the carousel CSS designing is done by using Bootstrap SASS. You can find the compiled SCSS in the CSS folder which is in the root directory. I used the SASS engine to compile SCSS files with NPM. 
+It is a product carousel that is made by using Bootstrap 4.0 default functionality. All the carousel CSS designing is done by using Bootstrap SASS. You can find the compiled SCSS in the CSS folder which is in the root directory. I used the SASS engine to compile SCSS files with NPM. The project file directory structure which I used in this is according to the bootstrap theming.
 
 
 ### Built With
 
 This Project is made by using the frameworks/libraries mentioned below. 
 
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-* [![Sass][sass-lang.com]][sass-lang-url]
-* [![NPM][npmjs.com]][npmjs-url]
+* Bootstrap 4.1
+* Fontawesome 4.7.0
+* SASS
+* Npmjs
+* HTML/CSS
 
 <!-- GETTING STARTED -->
 ## Getting Started
