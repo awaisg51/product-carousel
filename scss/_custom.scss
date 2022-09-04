@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "sofia-pro";
+    src: url("../fonts/sofiapro.otf");
+    display: swap;
+}
+
+body {
+    font-family: "sofia-pro";
+}
+
+.carousel-item {
+    img {
+        width: 100%;
+    }
+}
+
+.carousel {
+    .carousel-inner {
+        flex-wrap: nowrap;
+        transform: translate(-62.5%);
+        overflow: visible;
+        @include media-breakpoint-up(md) { 
+            transform: translate(-12.5%);
+        }
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.product-detail {
+    padding: 20px 20px 0 20px;
+    @include media-breakpoint-up(md) { 
+        padding: 20px 40px 0 40px;
+    }
+}
+
+.product-detail {
+    p {
+        font-size: 1em;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 10px;
+        @include media-breakpoint-up(md) { 
+            font-size: 1.25em;
+        }
+    }
+}
+
+.line-strike {
+    text-decoration: line-through;
+    margin: 5px;
+}
+
+.cart-button {
+    width: 100%;
+}
+
+.new-badge {
+    right: 10px;
+    top: -10px;
+    z-index: 999999;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 25px;
+    flex-direction: column;
+    @include media-breakpoint-down(sm) { 
+        right: 0;
+        width: 65px;
+        height: 65px;
+        font-size: 20px;
+    }
+}
+
+.product-reviews {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+}
+
+svg {
+    fill: #f4436c;
+    height: 1em;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    background-color: #fef2f4;
+    top: 37%;
+    @include media-breakpoint-down(sm) { 
+        width: 2em;
+        height: 2em;
+    }
+}
+
+.carousel-control-prev {
+    left: -2%;
+    @include media-breakpoint-down(sm) { 
+        left: 7%;
+    }
+}
+
+.carousel-control-next {
+    right: -2%;
+    @include media-breakpoint-down(sm) { 
+        right: 12%;
+    }
+}
+
+.product-carousel .carousel-inner .carousel-item.active,
+.product-carousel .carousel-inner .carousel-item.active + .carousel-item,
+.product-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item ,
+.product-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item + .carousel-item,
+.product-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    display: flex;
+    flex-flow: column;
+}
+
+.product-carousel .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.product-carousel .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item:not(.carousel-item--last),
+.product-carousel .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item:not(.carousel-item--last)+.carousel-item:not(.carousel-item--last),
+.product-carousel .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item:not(.carousel-item--last)+.carousel-item:not(.carousel-item--last)+.carousel-item:not(.carousel-item--last),
+.product-carousel .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item:not(.carousel-item--last)+.carousel-item:not(.carousel-item--last)+.carousel-item:not(.carousel-item--last)+.carousel-item:not(.carousel-item--last) {
+    transition: none;
+}
+
+.product-carousel .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translateZ(0);
+}
+
+.product-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.product-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+.product-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.product-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.product-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+.product-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+
+.product-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.product-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+.product-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.product-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.product-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+}
+
+@include media-breakpoint-up(md) {
+    .col, [class*=col-] {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
